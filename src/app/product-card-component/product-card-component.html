@@ -1,0 +1,26 @@
+<article class="product-card">
+  <img
+    [src]="product.image"
+    [alt]="product.title + ' — ' + product.color"
+    width="500"
+    height="500"
+    loading="lazy"
+  />
+  <div class="card-body">
+    <p class="category">{{ product.collection }} · {{ product.category }}</p>
+    <h2>{{ product.title }}</h2>
+    <p class="price">
+      @if (product.originalPrice) {
+        <s>{{ product.originalPrice | currency }}</s>
+      }
+      <span [class.sale]="product.originalPrice">{{ product.price | currency }}</span>
+    </p>
+    <a
+      [href]="product.sourceUrl"
+      target="_blank"
+      rel="noopener noreferrer"
+      [attr.aria-label]="'View ' + product.title + ' on adidas.com (opens in a new tab)'"
+      >View Product <span aria-hidden="true">↗</span></a
+    >
+  </div>
+</article>

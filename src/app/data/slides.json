@@ -1,0 +1,20 @@
+[
+  {
+    "title": "YOUR WAY. YOUR ORIGINALS.",
+    "description": "The classics you know. The energy you bring. Make every day your own.",
+    "image": "images/adidas/campaign-originals.jpg",
+    "alt": "Three people wearing adidas tracksuits and sneakers on outdoor bleachers"
+  },
+  {
+    "title": "FIND YOUR NEXT GEAR.",
+    "description": "Fresh air. Open roads. A little more in the tank. Meet your next running companion.",
+    "image": "images/adidas/campaign-running.jpg",
+    "alt": "Two athletes in adidas running gear on outdoor concrete steps"
+  },
+  {
+    "title": "OFF DUTY. ON YOUR TERMS.",
+    "description": "Easy layers and everyday essentials. Good style goes wherever you do.",
+    "image": "images/adidas/campaign-comfort.jpg",
+    "alt": "Two people wearing comfortable adidas sportswear at a bus shelter"
+  }
+]

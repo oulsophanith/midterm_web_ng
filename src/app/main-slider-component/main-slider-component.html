@@ -1,0 +1,50 @@
+<section
+  class="container slider-container"
+  aria-label="Adidas collections"
+  aria-roledescription="carousel"
+>
+  <div class="slider" (keydown.arrowleft)="previousSlide()" (keydown.arrowright)="nextSlide()">
+    @for (slide of slides; track slide.image; let index = $index) {
+      <div
+        class="slide"
+        [hidden]="currentSlide !== index"
+        role="group"
+        aria-roledescription="slide"
+        [attr.aria-label]="index + 1 + ' of ' + slides.length"
+      >
+        <img
+          [src]="slide.image"
+          [alt]="slide.alt"
+          width="800"
+          height="1067"
+          [attr.fetchpriority]="index === 0 ? 'high' : 'auto'"
+          [attr.loading]="index === 0 ? 'eager' : 'lazy'"
+        />
+        <div class="slide-caption">
+          <h2>{{ slide.title }}</h2>
+          <p>{{ slide.description }}</p>
+          <a href="#products">Shop Products <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    }
+
+    <button class="slider-arrow previous" aria-label="Previous slide" (click)="previousSlide()">
+      ‹
+    </button>
+    <button class="slider-arrow next" aria-label="Next slide" (click)="nextSlide()">›</button>
+
+    <div class="slide-indicators">
+      @for (slide of slides; track slide.image; let index = $index) {
+        <button
+          [class.active]="currentSlide === index"
+          [attr.aria-label]="'Show slide ' + (index + 1)"
+          [attr.aria-pressed]="currentSlide === index"
+          (click)="currentSlide = index"
+        ></button>
+      }
+    </div>
+    <span class="slide-status" aria-live="polite"
+      >Slide {{ currentSlide + 1 }} of {{ slides.length }}</span
+    >
+  </div>
+</section>

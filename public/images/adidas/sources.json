@@ -1,0 +1,51 @@
+{
+  "reference": "https://www.adidas.com/us",
+  "downloadedOn": "2026-10-08",
+  "images": [
+    {
+      "file": "samba.jpg",
+      "url": "https://assets.adidas.com/images/w_500,f_auto,q_auto/e705950e3c3f409f9f284459b7d31b1f_9366/Samba_OG_Shoes_Brown_ID1481_01_standard.jpg"
+    },
+    {
+      "file": "spezial.jpg",
+      "url": "https://assets.adidas.com/images/w_500,f_auto,q_auto/ae68c1cedbce46d6bc95f7e05049758d_9366/Handball_Spezial_Shoes_Brown_KK1153_01_00_standard.jpg"
+    },
+    {
+      "file": "gazelle.jpg",
+      "url": "https://assets.adidas.com/images/w_500,f_auto,q_auto/e9c5fab82e714c1f971806c20037bd0b_9366/Gazelle_Indoor_Shoes_Red_JI2063_01_standard.jpg"
+    },
+    {
+      "file": "evo-sl.jpg",
+      "url": "https://assets.adidas.com/images/w_500,f_auto,q_auto/b40f570a26144541bd73e1ee967ce5b1_9366/Adizero_EVO_SL_Shoes_White_JH6206_HM1.jpg"
+    },
+    {
+      "file": "fleece-pants.jpg",
+      "url": "https://assets.adidas.com/images/w_500,f_auto,q_auto/7a2803cbe41c4b29b69c99599c56e9c8_9366/Essentials_3-Stripes_Fleece_Pants_Black_JD1861_21_model.jpg"
+    },
+    {
+      "file": "samba-kids.jpg",
+      "url": "https://assets.adidas.com/images/w_500,f_auto,q_auto/fad9d2516e464405abd783de49daf523_9366/Samba_OG_Shoes_Kids_White_IE3675_01_standard.jpg"
+    },
+    {
+      "file": "ringer-tee.jpg",
+      "url": "https://assets.adidas.com/images/w_500,f_auto,q_auto/95e06491ebbc4c26901fa895d6346d1e_9366/ADIDAS_ORIGINALS_X_METALLICA_MENS_RINGER_TEE_White_LK6405_21_model.jpg"
+    },
+    {
+      "file": "campaign-running.jpg",
+      "url": "https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_800,w_800/run_fw26_chicago_marathon_tcc_01_d_17f1826d34.jpg"
+    },
+    {
+      "file": "campaign-originals.jpg",
+      "url": "https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_800,w_800/xcat_fw26_holiday_oct_generic_tcc_d_36fed051d7.jpg"
+    },
+    {
+      "file": "campaign-comfort.jpg",
+      "url": "https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_800,w_800/xcat_fw26_holiday_oct_htt_spw_tcc_d_a3b596962d.jpg"
+    },
+    {
+      "file": "tokyo.jpg",
+      "url": "https://assets.adidas.com/images/w_500,f_auto,q_auto/c31a0a8e36db4a8ea196c031bc51d809_9366/TOKYO_SHOES_Brown_KJ7541_01_00_standard.jpg"
+    }
+  ],
+  "note": "Original Adidas imagery used for this independent student storefront demonstration."
+}

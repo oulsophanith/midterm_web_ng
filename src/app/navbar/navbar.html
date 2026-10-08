@@ -1,0 +1,47 @@
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a class="brand" href="#home" aria-label="Adidas home" (click)="closeMenu()">
+      <img src="images/adidas/logo.svg" alt="adidas" width="66" height="47" />
+    </a>
+    <button
+      class="menu-button"
+      aria-controls="navigation"
+      [attr.aria-expanded]="menuOpen"
+      aria-label="Toggle navigation"
+      (click)="menuOpen = !menuOpen"
+    >
+      ☰
+    </button>
+    <div id="navigation" class="navigation" [class.open]="menuOpen">
+      <nav aria-label="Main navigation">
+        <a href="#home" (click)="closeMenu()">Home</a>
+        <a href="#products" (click)="closeMenu()">Products</a>
+        <select
+          aria-label="Product category"
+          [value]="selectedCategory"
+          (change)="categoryChange.emit($any($event.target).value)"
+        >
+          @for (category of categories; track category) {
+            <option [value]="category">{{ category }}</option>
+          }
+        </select>
+        <a href="#footer" (click)="closeMenu()">Contact</a>
+      </nav>
+      <form class="search-form" role="search" (submit)="submitSearch($event)">
+        <input
+          type="search"
+          placeholder="Search products"
+          aria-label="Search products"
+          [value]="searchText"
+          (input)="searchChange.emit($any($event.target).value)"
+        />
+        <button type="submit" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.5" />
+            <path d="m16 16 5 5" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
